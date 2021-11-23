@@ -1,8 +1,12 @@
 import './style/style.scss'
+import imageSrc from './assets/bg.webp'
+const body = document.body
+import fun from './fun.ts'
 
-console.log("Hello World!");
-function firstFunction() {
-  console.log('I need to make deploy');
-}
+const img = new Image ()
+img.src = imageSrc
+body.append(img)
 
-firstFunction()
+console.log('without loaders');
+
+console.log(fun());
